@@ -1,5 +1,8 @@
 # PHP-II Class Notes
 
+NOTE: please have a look at the code I posted here before you start the next assignment:
+https://github.com/dbierer/php-ii-nov-2019/tree/master/Homework
+
 ## TODO
 * reinstall the database
 
