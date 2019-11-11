@@ -3,6 +3,8 @@
 
 namespace AdminPanel\Entry;
 
+use AdminPanel\Entry\AbstractEntryInterface;
+
 /*
  * The idea behind this is to be able to monitor services throughout a server on an admin panel.
  *
@@ -14,7 +16,7 @@ namespace AdminPanel\Entry;
  * @param string    $logtime   The time in which the log was created.
  * @param string    $log       The actual log from the src
  */
-abstract class Entry
+abstract class AbstractEntry implements AbstractEntryInterface
 {
     protected $ip, $logtime, $log;
 
@@ -55,9 +57,6 @@ abstract class Entry
         $this->log = $log;
     }
 
-    public abstract function __toString() : string
-	{
- 
-	}
+    public abstract function __toString() : string;
 
 }

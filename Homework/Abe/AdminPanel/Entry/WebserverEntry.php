@@ -1,6 +1,9 @@
 <?php 
 
-namespace AdminPanel\WebserverEntry;
+namespace AdminPanel\Entry;
+
+use AdminPanel\Entry\AbstractEntry;
+use AdminPanel\Entry\AbstractEntryInterface;
 
 class WebserverEntry extends AbstractEntry implements AbstractEntryInterface
 {

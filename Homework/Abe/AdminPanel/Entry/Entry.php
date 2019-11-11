@@ -55,9 +55,6 @@ abstract class Entry
         $this->log = $log;
     }
 
-    abstract function __toString() : string
-	{
- 
-	}
+    abstract function __toString() : string;
 
 }
