@@ -54,5 +54,21 @@ class EntitiesAvailable
         return $this->totalNodeTypes;
     }
 
+	public function __get($property) {
+        echo 'Property named ' . $property . ' not found';
+        error_log(__METHOD__ . ': Access undefined property: ' . $property);
+        return false;
+    }
 
+    public function __set($property, $value) {
+        echo 'Propery named ' . $property . ' not found';
+        error_log(__METHOD__ . ': Attempting to set an undefined property: ' . $property);
+        return false;
+   }
+
+   public function __call($method, $args) {
+      echo 'Not a valid method';
+      error_log(__METHOD__ . ': Attempting to access an undefined method: ' . $method);
+      return false;
+  }
 }

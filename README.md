@@ -1,13 +1,16 @@
 # PHP-II Class Notes
 
-NOTE: please have a look at the code I posted here before you start the next assignment:
-https://github.com/dbierer/php-ii-nov-2019/tree/master/Homework
-
 ## TODO
 * reinstall the database
 
 ## HOMEWORK
-* For Sun 10 Nov 201`9
+* For Tue 12 Nov 2019
+  * Charlene: Lab: Type Hinting
+  * http://collabedit.com/wuesq
+  * NOTE: please have a look here first: https://github.com/dbierer/php-ii-nov-2019/tree/master/Homework/Charlene
+    * I made a few slight changes to your namespace structuring to make it more generic
+
+* For Sun 10 Nov 2019
   * Charlene: Magic Lab
   * Abe: Abstract Classes and Methods Lab
   * All: Lab: Interfaces
@@ -21,6 +24,18 @@ https://github.com/dbierer/php-ii-nov-2019/tree/master/Homework
   * ALL: Lab: Namespace
 
 ## CLASS NOTES
+* Creating pull requests on github: https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+
+* Running stand-alone PHP webserver:
+```
+cd /path/to/desired/project
+php -S localhost:9999
+````
+* Modify the `php.ini` file to add `display_errors=on`
+```
+sudo gedit /etc/php/7.3/cli/php.ini
+```
+
 * Composer
   * https://packagist.org/
 * Autoloading examples
