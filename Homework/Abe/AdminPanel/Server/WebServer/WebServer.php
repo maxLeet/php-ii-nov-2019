@@ -4,9 +4,8 @@ namespace AdminPanel\WebServer;
 
 class WebServer extends Server 
 {
-
 	public function getLog(){
-		echo "IP: " . $
+		return "SERVERNAME: ". $this->getName() . " REQUEST: " . $this->getLog();
 	}
 
 }

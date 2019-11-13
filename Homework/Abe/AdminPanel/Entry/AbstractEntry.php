@@ -29,17 +29,17 @@ abstract class AbstractEntry implements AbstractEntryInterface
 
     public function getIP() : string
 	{
-        return $ip;
+        return $this->ip;
     }
 
     public function getLogTime() : string
 	{
-        return $logtime;
+        return $this->logtime;
     }
 
     public function getLog() : string
 	{
-        return $log;
+        return $this->log;
     }
 
     public function setIP($ip)
@@ -52,9 +52,9 @@ abstract class AbstractEntry implements AbstractEntryInterface
         $this->logtime = $logtime;
     }
 
-    public function setLog(string $log)
+    public function setLog(Entry $entry)
 	{
-        $this->log = $log;
+        $this->log = $entry;
     }
 
     public abstract function __toString() : string;
