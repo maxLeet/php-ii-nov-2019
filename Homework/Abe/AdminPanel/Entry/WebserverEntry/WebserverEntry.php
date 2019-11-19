@@ -7,7 +7,7 @@ class WebserverEntry extends AbstractEntry
 
 	public function __toString() : string
 	{
-		return "TIME: ". $this->getLogTime." REQUEST: ". $this->getLog() . " FROM ". $this->getIP();
+		return "TIME: " . $this->getLogTime . " IP: " . $this->getIP() . " LOG: " . $this->getLog();	
 	}
 
 }

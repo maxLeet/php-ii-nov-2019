@@ -56,7 +56,12 @@ class Server
 
     public function addActivity(Entry $entry)	
 	{
-        $this->activity[] = $entry;
+        try{
+			$this->activity[] = $entry;
+		}catch(Exception $e){
+			echo 'Caught exception, Entry not a log format: ', $e->getMessage()."\n";
+		}
+
     }
 
 	abstract function getLog();

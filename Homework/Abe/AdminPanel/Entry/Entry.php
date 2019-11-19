@@ -27,17 +27,17 @@ abstract class Entry
 
     public function getIP()
 	{
-        return $ip;
+        return $this->ip;
     }
 
     public function getLogTime()
 	{
-        return $logtime;
+        return $this->logtime;
     }
 
     public function getLog()
 	{
-        return $log;
+        return $this->log;
     }
 
     public function setIP($ip)
