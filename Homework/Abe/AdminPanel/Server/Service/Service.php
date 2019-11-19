@@ -9,14 +9,15 @@ namespace AdminPanel\Server\Service;
  * @param integar $heartbeat    Given an integer value of the last heartbeat.
  * @param bool $status          Boolean value that determines if the service is currently being monitored.
  */
-class Service implements ServiceInterface
+class Service extends Server
 {
 
     protected $heartbeat, $status;
 
     public function __construct($name, $status=false)
 	{
-        parent ::__construct($name);
+		parent ::__construct($name);
+		$this->status = $status;
     }
 
     public function monitorOn() : bool
@@ -36,7 +37,12 @@ class Service implements ServiceInterface
 
     public function getHeartbeat()
 	{
-        return $this->heartBeat;
+	return $this->heartBeat;
+    }
+
+    public function getStatus()
+    {
+	    return $this->status;
     }
 
 }
